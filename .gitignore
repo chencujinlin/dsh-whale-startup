@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Machine-specific backups, installation state and screenshots.
+backups/
+qa/
+output/
+install-record.json
+install_local.py
+LOCAL_NOTES.md
+验证记录.md
+
+# Local configuration and credentials.
+.env
+.env.*
+*.pem
+*.key

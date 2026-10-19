@@ -1,0 +1,20 @@
+{
+  "name": "dsh-whale-startup",
+  "version": "1.0.0",
+  "description": "鲸鱼娘开场：配合原生 HARNESS 加载页，工作台就绪后拍走加载提示并回到右下角。",
+  "repository": {"type": "git", "url": "git+https://github.com/chencujinlin/dsh-whale-startup.git"},
+  "homepage": "https://github.com/chencujinlin/dsh-whale-startup#readme",
+  "bugs": {"url": "https://github.com/chencujinlin/dsh-whale-startup/issues"},
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "startup-animation", "mascot"],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json"},
+  "files": ["lib", "assets", "cordis.patch.yml", "README.md"],
+  "scripts": {"build": "python3 build.py", "test": "node --test tests/host.test.mjs"},
+  "dsh": {
+    "bundle": {"patch": "./cordis.patch.yml"},
+    "client": {"platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-ui-renderer", "@deepseek-ai/dsh-client-ui-layout"]}
+  },
+  "engines": {"node": ">=22"},
+  "private": true
+}
