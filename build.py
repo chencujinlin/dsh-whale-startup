@@ -2,7 +2,7 @@ from pathlib import Path
 import base64,json
 root=Path(__file__).resolve().parent
 (root/'lib').mkdir(exist_ok=True)
-names=['waiting','impatient','windup','swing','slap','smug']
+names=['waiting','impatient','windup','swing','slap','smug','cheer']
 assets={}
 for name in names:
     dest=root/'assets'/f'{name}.png'

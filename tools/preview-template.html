@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>鲸鱼娘 · 独立欢呼结尾</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:white;color:#0f1115;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}#root{height:100vh}[data-dsh-boot]{height:100%;display:grid;place-items:center;background:#fff}.boot-card{display:flex;flex-direction:column;align-items:center;gap:16px}.wordmark{font-size:16px;line-height:24px;letter-spacing:.08em;font-weight:600}.hint{font-size:12px;line-height:18px;color:#81858c}[data-dsh-boot-spinner]{width:24px;height:24px;border:2px solid #e4e4e4;border-top-color:#0f1115;border-right-color:#0f1115;border-radius:50%}.chrome{position:fixed;left:14px;top:18px;display:flex;gap:9px;z-index:2147483647}.chrome i{width:14px;height:14px;border-radius:50%;background:#ff605a;border:1px solid #e54a46}.chrome i:nth-child(2){background:#ffbd2e;border-color:#e8a51e}.chrome i:nth-child(3){background:#29c840;border-color:#25ad36}.workbench{height:100%;display:grid;grid-template-columns:224px 1fr}.sidebar{background:#f1f3f5;padding:48px 22px;color:#5c6570;font-size:14px}.sidebar b{display:block;font-size:24px;color:#242a32;letter-spacing:-1px;margin:0 0 25px}.sidebar small{background:#242a32;color:#fff;font-size:8px;padding:3px;letter-spacing:0}.sidebar button{border:1px solid #e0e4e8;background:white;border-radius:12px;padding:13px;width:100%;font:inherit;margin-bottom:23px}.sidebar p{margin:22px 6px}.sidebar hr{border:0;border-top:1px solid #e2e5e8;margin:34px 0 22px}.workspace{display:flex;align-items:center;justify-content:center;padding:50px}.welcome{width:min(660px,100%);text-align:center}.welcome h1{font-size:31px;font-weight:650;margin-bottom:16px}.welcome>p{color:#9aa2ab;font-size:14px}.composer{margin-top:66px;height:144px;border:1px solid #dfe3e7;border-radius:20px;background:#fff;text-align:left;padding:24px;color:#adb4bc;font-size:15px;box-shadow:0 8px 30px #27332c05}.composer footer{margin-top:57px;font-size:11px;color:#8d97a2;display:flex;justify-content:space-between}.composer footer span:last-child{background:#d5dff2;border-radius:50%;color:white;width:28px;height:28px;line-height:28px;text-align:center;margin-top:-8px}
+</style><div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div><div id="root"><div data-dsh-boot><div class="boot-card"><div class="wordmark">HARNESS</div><div data-dsh-boot-spinner></div><div class="hint">Loading plugins…</div></div></div></div>
+<template id="workbench-template"><main class="workbench"><aside class="sidebar"><b>deepseek <small>HARNESS</small></b><button>＋ 新会话</button><p>插件</p><p>自动化任务</p><p>上下文洞察</p><p>SSH</p><hr><p>工作区</p><p>dsh-whale-startup</p></aside><section class="workspace"><div class="welcome"><h1>探索未至之境</h1><p>从一个想法开始。</p><div class="composer">描述你想要构建的内容…<footer><span>＋　工作区内修改</span><span>↑</span></footer></div></div></section></main></template>
+<script>window.__DSH_WHALE_SPLASH_PENDING__={ready:false,disabled:false};</script>
+<script>/*WHALERUNTIME*/</script>
+<script>
+window.__total=4.2;window.ERAS=[{id:'standalone_cheer',t0:0,t1:4.2}];
+window.prepare=async()=>{};
+window.renderFrame=t=>window.__DSH_WHALE_SPLASH__.renderAt(t);
+window.renderSolo=(_id,t)=>window.renderFrame(t);
+function initializePreview(){
+  if(!window.__DSH_WHALE_SPLASH__?.getState().loaded){requestAnimationFrame(initializePreview);return;}
+  window.__canvas=document.querySelector('[data-dsh-whale-splash] canvas');
+  window.__DSH_WHALE_SPLASH__.renderAt(0);
+  document.getElementById('root').replaceChildren(document.getElementById('workbench-template').content.cloneNode(true));
+  window.__ready=true;
+  if(!new URLSearchParams(location.search).has('render')){let start=performance.now();function play(now){const t=Math.min(4.2,(now-start)/1000);renderFrame(t);if(t<4.2)requestAnimationFrame(play);}requestAnimationFrame(play);}
+}
+requestAnimationFrame(initializePreview);
+</script></html>
