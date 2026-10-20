@@ -1,6 +1,6 @@
 {
   "name": "dsh-whale-startup",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "鲸鱼娘开场：配合原生 HARNESS 加载页，就绪后拍走提示、放大欢呼开工，再淡出消失。独立运行。",
   "repository": {"type": "git", "url": "git+https://github.com/chencujinlin/dsh-whale-startup.git"},
   "homepage": "https://github.com/chencujinlin/dsh-whale-startup#readme",
@@ -9,12 +9,12 @@
   "type": "module",
   "main": "lib/index.js",
   "exports": {".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json"},
-  "files": ["lib", "assets", "cordis.patch.yml", "README.md"],
+  "files": ["lib", "assets", "cordis.patch.yml", "README.md", "CHANGELOG.md"],
   "scripts": {"build": "python3 build.py", "test": "node --test tests/host.test.mjs"},
   "dsh": {
     "bundle": {"patch": "./cordis.patch.yml"},
     "client": {"platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-ui-renderer", "@deepseek-ai/dsh-client-ui-layout"]}
   },
-  "engines": {"node": ">=22"},
+  "engines": {"node": ">=22", "dsh": "0.2.1-rc.2"},
   "private": true
 }
